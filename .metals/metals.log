@@ -91384,3 +91384,5 @@ Caused by: java.nio.file.FileSystemNotFoundException: Provider "git" not install
 	at scala.meta.internal.metals.MetalsLanguageServer.didFocus(MetalsLanguageServer.scala:982)
 	... 15 more
 
+März 21, 2021 12:10:07 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTraceNotification
