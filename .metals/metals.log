@@ -91386,3 +91386,4 @@ Caused by: java.nio.file.FileSystemNotFoundException: Provider "git" not install
 
 März 21, 2021 12:10:07 AM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTraceNotification
+[0m2021.03.21 00:42:07 INFO  shutting down Metals[0m
