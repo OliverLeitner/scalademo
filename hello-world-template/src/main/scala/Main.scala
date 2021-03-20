@@ -85,7 +85,7 @@ object MyCustomerJsonProtocol extends DefaultJsonProtocol {
   }
 }
 
-/*object MyUserJsonProtocol extends DefaultJsonProtocol {
+object MyUserJsonProtocol extends DefaultJsonProtocol {
   implicit object UserJsonFormat extends RootJsonFormat[User] {
     def write(c: User) =
       JsArray(
@@ -104,11 +104,10 @@ object MyCustomerJsonProtocol extends DefaultJsonProtocol {
       case _ => deserializationError("Color expected")
     }
   }
-}*/
+}
 
 // import spray.json._
 // import DefaultJsonProtocol._ // if you don't supply your own Protocol (see below)
-// import MyUserJsonProtocol._ // we need to import our own protocol eventhough we are in the same file...
 import MyCustomerJsonProtocol._ // we need to import our own protocol eventhough we are in the same file...
 
 // base webserver to serve up stuff, lets say, json
@@ -153,6 +152,7 @@ object HttpServerRoutingMinimal {
   }
 }
 
+import MyUserJsonProtocol._ // we need to import our own protocol eventhough we are in the same file...
 
 object CustomerID {
 
